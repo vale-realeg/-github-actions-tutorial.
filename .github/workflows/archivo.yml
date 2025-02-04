@@ -8,7 +8,12 @@ on:
 jobs: 
    ejemplo:
       runs-on: ubuntu-latest
+      env:
+        PLATAFORMA: "AWS"
+        REGION: "us-east-1"
       steps:
-        - name: Mostrar Mensaje
-          run: echo "¡Hola, GitHub Actions!"
+        - name: Mostrar Variables
+          run: | 
+           echo "Plataforma: $PLATAFORMA"
+           echo: "Región: $REGION"
         
