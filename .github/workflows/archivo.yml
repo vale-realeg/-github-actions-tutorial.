@@ -8,13 +8,11 @@ on:
 jobs: 
    ejemplo:
       runs-on: ubuntu-latest
-      env:
-        PLATAFORMA: "AWS"
-        REGION: "us-east-1"
       steps:
-        - name: Mostrar plataforma solo si es AWS
-          if: env.PLATAFORMA == 'AWS'
+        - name: Mostrar API Key (No se mostrará por seguridad)
           run: | 
-           echo "La Plataforma es AWS"
+            echo "API Key: ${{ secrets.API_KEY }}"
+        
+          
            
         
