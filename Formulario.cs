@@ -18,14 +18,14 @@ class Formulario
             Console.Write("Ingrese su edad: ");
             string edadInput = Console.ReadLine();
             
-            if (int.TryParse(edadInput, out edad) && edad > 0)
-            {
-                break;
-            }
-            else
-            {
-                Console.WriteLine("Por favor, ingrese una edad válida.");
-            }
+            //if (int.TryParse(edadInput, out edad) && edad > 0)
+            //{
+                //break;
+            //}
+            //else
+            //{
+                //Console.WriteLine("Por favor, ingrese una edad válida.");
+            //}
         }
 
         // Solicitar el correo electrónico
